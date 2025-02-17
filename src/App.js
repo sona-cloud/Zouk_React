@@ -15,7 +15,7 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             BAGS
           </a>
           <button
@@ -32,12 +32,12 @@ const App = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/luggage">
                   LAUGGAGE
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/footwear">
                   FOOTWEARS
                 </a>
               </li>
@@ -52,24 +52,26 @@ const App = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/offers">
                       OFFERS
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/handbags">
                       HAND BAGS
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/officebags">
                       OFFICE BAGS
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">NEW ARRIVALS</a>
+                <a className="nav-link disabled" href="#">
+                  NEW ARRIVALS
+                </a>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -89,10 +91,10 @@ const App = () => {
       {/* Carousel */}
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
-          {[
-            "https://zouk.co.in/cdn/shop/collections/footwear_banner-01_f8866ce7-274b-4f2f-95f3-73579e529f70.png?v=1718950005&width=2000",
-            "https://zouk.co.in/cdn/shop/collections/collection_banners_free_gift-19.png?v=1729081983&width=2000",
-            "https://zouk.co.in/cdn/shop/collections/luggage-03.png?v=1724408960&width=2000",
+          {[ 
+            "https://zouk.co.in/cdn/shop/collections/footwear_banner-01_f8866ce7-274b-4f2f-95f3-73579e529f70.png?v=1718950005&width=2000", 
+            "https://zouk.co.in/cdn/shop/collections/collection_banners_free_gift-19.png?v=1729081983&width=2000", 
+            "https://zouk.co.in/cdn/shop/collections/luggage-03.png?v=1724408960&width=2000" 
           ].map((src, index) => (
             <div
               className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -129,7 +131,7 @@ const App = () => {
       {/* Product Cards */}
       <div className="container mt-4">
         <div className="row g-4">
-          {[
+          {[ 
             {
               title: "Nawabi Couture Women's Office Bag",
               price: "₹ 1,499.00",
@@ -178,17 +180,17 @@ const App = () => {
               <h5>Useful Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#" className="text-white">
+                  <a href="/contact-us" className="text-white">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white">
+                  <a href="/faqs" className="text-white">
                     FAQs
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white">
+                  <a href="/order-delivery" className="text-white">
                     Order Delivery
                   </a>
                 </li>
